@@ -25,7 +25,7 @@
 
 **Infra:** Docker · Railway · AWS Lambda · Pinecone · ChromaDB · Redis
 
-**Languages:** Python · JavaScript
+**Languages:** Python ·
 
 ---
 
@@ -48,5 +48,4 @@ Follow along to watch an Agentic AI Engineer get built from the ground up.
 ---
 
 📍 Nashik, Maharashtra, India
-🔗 [LinkedIn](https://www.linkedin.com/in/seshank-ch-850472286/)
-🌐 [Website](https://seshankch.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)

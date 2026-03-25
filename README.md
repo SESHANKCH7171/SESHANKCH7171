@@ -1,16 +1,52 @@
-## Hi there 👋
+# Hi, I'm Seshank CH
+## Agentic AI Engineer | LangGraph · LangChain · n8n
 
-<!--
-**SESHANKCH7171/SESHANKCH7171** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> I build production-grade multi-agent AI systems that automate complex business workflows — observable, cost-tracked, and actually deployed.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I'm Building Right Now
+
+| Project | Stack | Status |
+|---|---|---|
+| Production RAG System | LangChain, ChromaDB, DeepEval, FastAPI | 🔄 In Progress |
+| Multi-Agent Research System | LangGraph, LangSmith, Redis | 🔜 Coming Month 2 |
+| B2B Agentic Pipeline | n8n, LangGraph, FastAPI | 🔜 Coming Month 3 |
+| LLMOps Observability Layer | LangSmith, DeepEval, Docker | 🔜 Coming Month 4 |
+| Agentic AI Capstone | All of the above, deployed on AWS | 🔜 Coming Month 5-6 |
+
+---
+
+## Stack
+
+**AI/LLM:** LangChain · LangGraph · LangSmith · OpenAI · HuggingFace · DeepEval · RAGAS
+
+**Automation:** n8n · FastAPI · Pydantic · REST APIs
+
+**Infra:** Docker · Railway · AWS Lambda · Pinecone · ChromaDB · Redis
+
+**Languages:** Python · JavaScript
+
+---
+
+## Building in Public
+
+I commit every single day — learning, building, or deploying.
+Every commit = real code, not tutorials.
+
+Follow along to watch an Agentic AI Engineer get built from the ground up.
+
+---
+
+## Background
+
+- Aerospace Engineering (IITM Postgraduate, 2023)
+- B2B Systems & Lead Generation (Aerospace & Defense domain)
+- AI Product Development & Workflow Automation
+- Open to **remote roles globally** in Agentic AI / LLMOps
+
+---
+
+📍 Nashik, Maharashtra, India
+🔗 [LinkedIn](https://www.linkedin.com/in/seshank-ch-850472286/)
+🌐 [Website](https://seshankch.com)

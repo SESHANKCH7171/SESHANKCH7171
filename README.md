@@ -9,6 +9,7 @@
 
 | Project | Stack | Status |
 |---|---|---|
+| Multi-Agent-Content-Engine | CrewAI, Gemini API | ✅ Shipped |
 | Production RAG System | LangChain, ChromaDB, DeepEval, FastAPI | 🔄 In Progress |
 | Multi-Agent Research System | LangGraph, LangSmith, Redis | 🔜 Coming Month 2 |
 | B2B Agentic Pipeline | n8n, LangGraph, FastAPI | 🔜 Coming Month 3 |
@@ -19,7 +20,7 @@
 
 ## Stack
 
-**AI/LLM:** LangChain · LangGraph · LangSmith · OpenAI · HuggingFace · DeepEval · RAGAS
+**AI/LLM:** LangChain · LangGraph · LangSmith · CrewAI . OpenAI · Gemini . HuggingFace · DeepEval · RAGAS
 
 **Automation:** n8n · FastAPI · Pydantic · REST APIs
 

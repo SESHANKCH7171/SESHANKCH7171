@@ -49,3 +49,5 @@ Follow along to watch an Agentic AI Engineer get built from the ground up.
 
 📍 Nashik, Maharashtra, India
 🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)
+
+🔗 <a href="https://www.linkedin.com/in/seshankch/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

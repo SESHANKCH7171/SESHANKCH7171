@@ -1,5 +1,5 @@
 # Hi, I'm Seshank CH
-## Agentic AI Engineer | LangGraph · LangChain · n8n
+## Agentic AI Engineer | LangGraph · LangChain · n8n · CrewAI
 
 > I build production-grade multi-agent AI systems that automate complex business workflows — observable, cost-tracked, and actually deployed.
 
@@ -10,6 +10,7 @@
 | Project | Stack | Status |
 |---|---|---|
 | Multi-Agent-Content-Engine | CrewAI, Gemini API | ✅ Shipped |
+| CUSTOMER SUPPORT RAG | CrewAI, Gemini API, ScrapeWebsitetool() | ✅ Shipped |
 | Production RAG System | LangChain, ChromaDB, DeepEval, FastAPI | 🔄 In Progress |
 | Multi-Agent Research System | LangGraph, LangSmith, Redis | 🔜 Coming Month 2 |
 | B2B Agentic Pipeline | n8n, LangGraph, FastAPI | 🔜 Coming Month 3 |

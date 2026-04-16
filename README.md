@@ -1,4 +1,5 @@
-# Hi, I'm Seshank CH
+# Hi, I'm Seshank Chinnapotula
+
 ## Agentic AI Engineer | LangGraph · LangChain · n8n · CrewAI
 
 > I build production-grade multi-agent AI systems that automate complex business workflows — observable, cost-tracked, and actually deployed.
@@ -20,22 +21,33 @@
 
 ---
 
+## 🔬 What I've Broken (And Learned From)
+
+> Most engineers only show what worked. I also document what failed — because that's where the real learning is.
+
+| Project | What Went Wrong | Root Cause | Fix In Progress |
+|---|---|---|---|
+| [STOCK-ANALYSIS-HALLUCINATED](https://github.com/SESHANKCH7171/STOCK-ANALYSIS-HALLUCINATED) | LLM fabricated price levels, RSI values, and trend data with full confidence | No source grounding, no validation layer, no "I don't know" fallback | v2 rebuilding with RAG-first architecture + validation agent |
+
+*More failure case studies will be added as I encounter them. Building in public means building honestly.*
+
+---
+
 ## Stack
 
-**AI/LLM:** LangChain · LangGraph · LangSmith · CrewAI . OpenAI · Gemini . HuggingFace · DeepEval · RAGAS
+**AI/LLM:** LangChain · LangGraph · LangSmith · CrewAI · OpenAI · Gemini · HuggingFace · DeepEval · RAGAS
 
 **Automation:** n8n · FastAPI · Pydantic · REST APIs
 
 **Infra:** Docker · Railway · AWS Lambda · Pinecone · ChromaDB · Redis
 
-**Languages:** Python ·
+**Languages:** Python
 
 ---
 
 ## Building in Public
 
-I commit every single day — learning, building, or deploying.
-Every commit = real code, not tutorials.
+I commit every single day — learning, building, or deploying. Every commit = real code, not tutorials.
 
 Follow along to watch an Agentic AI Engineer get built from the ground up.
 
@@ -48,8 +60,4 @@ Follow along to watch an Agentic AI Engineer get built from the ground up.
 - AI Product Development & Workflow Automation
 - Open to **remote roles globally** in Agentic AI / LLMOps
 
----
-
-📍 Nashik, Maharashtra, India
-🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)
-
+📍 Nashik, Maharashtra, India &nbsp; 🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)

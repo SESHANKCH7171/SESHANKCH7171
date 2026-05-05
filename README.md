@@ -38,7 +38,7 @@
 
 **AI/LLM:** LangChain · LangGraph · LangSmith · CrewAI · OpenAI · Gemini · HuggingFace · DeepEval · RAGAS
 
-**Automation:** n8n · FastAPI · Pydantic · REST APIs
+**Automation:** n8n · FastAPI · Pydantic · REST APIs · LiteLLM
 
 **Infra:** Docker · Railway · AWS Lambda · Pinecone · ChromaDB · Redis
 

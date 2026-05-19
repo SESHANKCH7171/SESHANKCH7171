@@ -14,6 +14,7 @@
 | CUSTOMER SUPPORT RAG | CrewAI, Gemini API, ScrapeWebsitetool(), Websitesearchtool() | ✅ Shipped |
 | Health Assistant Multi Agent RAG | CrewAI, Gemini API, ChromaDB, PubMed_QA (HuggingFace) | ✅ Shipped |
 | Universal LLM Terminal Bridge | FastAPI, LiteLLM, Google Gemini API, uvicorn | ✅ Shipped |
+| VoiceScribe | Streamlit, Groq API (Whisper Large V3), sounddevice, Python | ✅ Shipped |
 | Production RAG System | LangChain, ChromaDB, DeepEval, FastAPI | 🔄 In Progress |
 | Multi-Agent Research System | LangGraph, LangSmith, Redis | 🔜 Coming Month 2 |
 | B2B Agentic Pipeline | n8n, LangGraph, FastAPI | 🔜 Coming Month 3 |

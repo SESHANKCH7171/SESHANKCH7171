@@ -62,7 +62,7 @@ Built a multi-agent AI Copilot (CrewAI + Gemini 2.5 Flash + ChromaDB, deployed w
 | Query resolution accuracy | `[ADD YOUR NUMBER]`% |
 | Manual workload reduced | `[ADD YOUR NUMBER]`% |
 
-*Label these as project estimates / simulated evaluations if you haven't measured them against real usage yet — that's still credible, fabricated precision isn't.*
+
 
 **Status:** ✅ Deployed
 **Stack:** CrewAI · Gemini 2.5 Flash · ChromaDB · Streamlit · Docker
@@ -95,7 +95,6 @@ Building out a portfolio of case studies, each following the same **Problem → 
 | Universal LLM Terminal Bridge | FastAPI, LiteLLM, Gemini API, Uvicorn | ✅ Shipped |
 | VoiceScribe | Streamlit, Groq (Whisper Large V3), Python | ✅ Shipped |
 
-*(Reframe these with a one-line Problem → Solution note each as you get time — even a sentence turns a tech list into a product story.)*
 
 ---
 

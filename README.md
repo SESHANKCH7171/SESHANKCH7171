@@ -77,11 +77,11 @@ Building out a portfolio of case studies, each following the same **Problem → 
 
 | Case Study | Problem It Solves | Status |
 |---|---|---|
+| AI Resume Analyzer | Deployed an application for HRs to analyze 1000 resumes & shortlist the right candidate for the role | ✅ Deployed |
 | AI Business Analyst Copilot | BRD → PRD → User Stories → Acceptance Criteria → Roadmap → Test Cases, automated | 🔜 In Progress |
-| Tender Intelligence Platform | `[describe the problem once scoped]` | 📋 Planned |
-| AI CRM Copilot | `[describe the problem once scoped]` | 📋 Planned |
-| Product Analytics Dashboard | `[describe the problem once scoped]` | 📋 Planned |
-| AI Resume Analyzer | `[describe the problem once scoped]` | 📋 Planned |
+| Tender Intelligence Platform | `[I'll describe the problem once scoped]` | 📋 Planned |
+| AI CRM Copilot | `[I'll describe the problem once scoped]` | 📋 Planned |
+| Product Analytics Dashboard | `[I'll describe the problem once scoped]` | 📋 Planned |
 
 ---
 

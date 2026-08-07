@@ -19,29 +19,32 @@ I don't just ship models — I trace every project back to a business problem an
 
 ## 🛠️ Core Product & Engineering Stack
 
-**Product**
-`Notion` `Jira` `Figma` <!-- ⚠️ update with the tools you actually use for PRDs/roadmaps -->
+**Product & Data**
+`Notion` `Jira` `Figma` `PowerBI` `SQL` <!-- ⚠️ update with the tools you actually use for PRDs/roadmaps -->
 
 **Business**
 `SQL` `Power BI` <!-- ⚠️ update if different -->
 
 **AI & Orchestration**
-`Google Gemini` `LangGraph` `LangChain` `CrewAI` `LangSmith` `LiteLLM`
+`Google Gemini` `LangGraph` `LangChain` `CrewAI` `LiteLLM` `Livekit (WebRTC)` 
 
-**Backend**
-`FastAPI` `Docker` `Pydantic` `Uvicorn`
+**Backend & API**
+`FastAPI` `Docker` `Pydantic` `Uvicorn` `SQLite` `APScheduler` `Python`   
 
 **Automation**
-`n8n`
+`n8n` `Make` 
 
 **Data & Retrieval**
-`ChromaDB` `Pinecone` `Redis`
+`ChromaDB` `Qdrant`
 
 **Evaluation & Observability**
-`DeepEval` `RAGAS` `LangSmith`
+`LangSmith`
 
 **Deployment**
-`AWS` `Railway` `Vercel`
+`AWS` `Railway` `Vercel` `Render` `Streamlit`
+
+**Models & LLMOps**
+`Groq (llama 3.3 + Whisper)` `Gemini` `MeshAPI` `OpenAI`   
 
 ---
 
@@ -50,22 +53,42 @@ I don't just ship models — I trace every project back to a business problem an
 ### Hotel Operations AI Copilot
 
 **Business Problem**
-Hotels lose hours every day answering repetitive guest and staff questions — booking status, room availability, internal SOPs — pulling GMs and front-desk staff away from higher-value work.
+General Managers spend hours manually pulling data from fragmented systems (Revenue, Operations, Reputation, Payroll). Traditional LLM dashboards hallucinate financial KPIs, rendering them useless for executive decision-making.
 
 **Solution**
-Built a multi-agent AI Copilot (CrewAI + Gemini 2.5 Flash + ChromaDB, deployed with Streamlit/Docker) that automates guest support, booking queries, and internal operations lookups.
+Architected a deterministic multi-agent state machine separating KPI computation from LLM reasoning. Integrated a real-time WebRTC Voice Agent allowing executives to query complex relational databases hands-free.
 
 **Business Value**
 | Metric | Result |
 |---|---|
-| Time saved | `[ADD YOUR NUMBER]` hrs/day |
-| Query resolution accuracy | `[ADD YOUR NUMBER]`% |
-| Manual workload reduced | `[ADD YOUR NUMBER]`% |
+| KPI Hallucination rate | 0% (Deterministic Python math tools) |
+| Voice Query latency | < 1s (Routed via Groq LPUs & LiveKit) |
+| Time saved | ~12 hrs/week on data aggregation |
 
 
 
 **Status:** ✅ Deployed
-**Stack:** CrewAI · Gemini 2.5 Flash · ChromaDB · Streamlit · Docker
+**Stack:** LangGraph · Gemini 2.5 Flash · Docker · Voice Agent · LiveKit · Groq (Llama 3.3 & Whisper Large v3) · Streamlit · ChromaDB · SQLite
+
+### SmartReco.ai — Proactive EdTech Recommendation Engine
+
+**Business Problem**
+Tracking high-frequency user telemetry to generate proactive AI course recommendations typically DDOSes the backend, causes massive UI lag, and spirals LLM API costs out of control.
+
+**Solution**
+Engineered a non-blocking frontend event batcher and a FastAPI dual-write synchronization engine. Deployed asynchronous background workers (APScheduler) to process the LangGraph recommendation pipeline silently, plus API guardrails (RBAC) to block administrative token waste.
+
+**Business Value**
+| Metric | Result |
+|---|---|
+| Main browser thread blocking | 0ms (Async background processing) |
+| Admin token wastage | $0 (Intercepted at API gateway) |
+| Database Synchronization | Instant dual-write (SQLite + ChromaDB) |
+
+
+
+**Status:** ✅ Deployed
+**Stack:** FastAPI · LangGraph · ChromaDB · SQLite · Vanilla JS Event Batching
 
 [→ View Repo](#)
 
@@ -77,6 +100,9 @@ Building out a portfolio of case studies, each following the same **Problem → 
 
 | Case Study | Problem It Solves | Status |
 |---|---|---|
+| Customer Support RAG for Stripe | CrewAI, Gemini API, web search/scrape tools | ✅ Shipped |
+| Health Assistant Multi-Agent RAG | CrewAI, Gemini API, ChromaDB, PubMed_QA | ✅ Shipped |
+| VoiceScribe | Streamlit, Groq (Whisper Large V3), Python | ✅ Shipped |
 | AI Resume Analyzer | Deployed an application for HRs to analyze 1000 resumes & shortlist the right candidate for the role | ✅ Deployed |
 | AI Business Analyst Copilot | BRD → PRD → User Stories → Acceptance Criteria → Roadmap → Test Cases, automated | 🔜 In Progress |
 | Tender Intelligence Platform | `[I'll describe the problem once scoped]` | 📋 Planned |
@@ -87,13 +113,13 @@ Building out a portfolio of case studies, each following the same **Problem → 
 
 ## 🚢 Other Shipped Projects
 
-| Project | Stack | Status |
-|---|---|---|
-| Multi-Agent Content Engine | CrewAI, Gemini API | ✅ Shipped |
-| Customer Support RAG | CrewAI, Gemini API, web search/scrape tools | ✅ Shipped |
-| Health Assistant Multi-Agent RAG | CrewAI, Gemini API, ChromaDB, PubMed_QA | ✅ Shipped |
-| Universal LLM Terminal Bridge | FastAPI, LiteLLM, Gemini API, Uvicorn | ✅ Shipped |
-| VoiceScribe | Streamlit, Groq (Whisper Large V3), Python | ✅ Shipped |
+| Project | Problem Solved | Stack | Status |
+|---|---|---|---|
+| Universal LLM Terminal Bridge | Bypassed Anthropic API rate limits and billing lock-in by building a 1,500-line async middleware proxy. Translates Claude Code schemas to Gemini APIs in real-time.| FastAPI, LiteLLM, Gemini API, Uvicorn | ✅ Shipped |
+| HR Analytics Platform | Bypassed keyword-matching limitations of traditional ATS software by engineering a contextual document parsing engine for 1,000+ resumes.| Python, Streamlit, Gemini 2.5 Flash, JSON Extraction | ✅ Shipped |
+| Customer Churn Dashboard | Segmented 7,000+ telecom records to identify demographic drivers of a 30.5% monthly revenue bleed, proposing auto-pay incentives.| Python, Pandas, Matplotlib | ✅ Shipped |
+| Multi-Agent Content Engine | Automated domain-specific content pipelines utilizing coordinated AI agents.| CrewAI, Gemini API | ✅ Shipped |
+
 
 
 ---
@@ -104,6 +130,8 @@ Building out a portfolio of case studies, each following the same **Problem → 
 
 | Project | What Went Wrong | Root Cause | Fix Applied |
 |---|---|---|---|
+| Hotel GM Voice Agent | LiveKit WebRTC widget crashed, displaying a blank white box in the dashboard. | Streamlit's native components.html() runs in an iframe that strictly strips allow="microphone" security tags. | Generated dynamic access tokens in the backend and pivoted to a Secure Executive WebRTC Portal in a new tab, bypassing the iframe sandbox entirely. |
+| Terminal AI Testing | Hit hard API rate limits and billing lock-in during local dev testing, stopping work. |	Hardcoded vendor lock-in within specialized developer terminal clients.	| Upskilled in FastAPI to build a dynamic API proxy, translating SSE token-by-token streaming to map Anthropic requests to free Gemini models. |
 | Stock Analysis (Hallucinated) | LLM fabricated price/RSI/trend data with full confidence | No source grounding, no validation layer | Fixed in Hotel GM 2.0 pattern: deterministic metrics via custom Python service tools; LLM strictly for cross-domain reasoning |
 
 ---
@@ -124,9 +152,9 @@ As each case study ships, I'll publish the full product trail alongside the code
 ## 🎓 Background
 
 - **M.Tech, Aerospace Engineering** — IIT Madras
-- **B2B Systems & Market Intelligence** — specialized in the Aerospace & Defense domain
+- **B2B Systems & Market Intelligence** 
 - Currently focused on **AI Product Engineering**, business analysis, and production AI systems
-- Open to remote **AI Product Analyst / AI Product Engineer** roles globally
+- Open to remote **AI Product developer/analyst** roles globally
 
 📍 Nashik, Maharashtra, India
 🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)

@@ -1,165 +1,153 @@
 # Hi, I'm Seshank Chinnapotula 👋
+### AI Agent Engineer | Multi-Agent Systems · Real-Time WebRTC Voice · Enterprise RAG & Security
 
-### AI Product Engineer | Business Problem → Product Strategy → AI Development → Production Deployment
-
-I design and build AI products that automate business workflows, improve decision-making, and reduce manual effort.
-From product discovery and PRDs to production deployment, I build end-to-end AI solutions — combining business analysis, product thinking, AI engineering, and automation.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seshankch)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seshankch7171)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seshankch7171@gmail.com)
+[![YouTube Demo](https://img.shields.io/badge/Live_Voice_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/lGpPy6ma4SQ)
 
 ---
 
-## 🧭 My Product Development Process
+## ⚡ Engineering Philosophy
+> **"Draw the line between deterministic logic and LLM reasoning."**  
+> Moving beyond basic prompt wrappers and toy demos. I build production-ready multi-agent workflows, sub-second multimodal voice pipelines, and hardened enterprise RAG platforms designed for real deployment constraints: **low latency, zero hallucination on metrics, API cost control, and rigorous quantitative evaluation.**
+
+🎓 **IIT Madras Dual Degree (B.Tech + M.Tech)** in Aerospace Engineering.
+
+---
+
+## 🧭 Agent Engineering Blueprint
 
 ```
-Research → Problem Definition → PRD → Wireframes → Architecture → Development → Testing → Deployment → Analytics → Iteration
+System Requirements ➔ State Machine Topology (LangGraph) ➔ Deterministic Tool Contracts (Pydantic) ➔ Guardrail Policies (Colang) ➔ Retrieval & Reranking Funnel ➔ Gateway & Fallbacks ➔ Golden Evaluation Benchmarks (RAGAS) ➔ Telemetry & Distributed Tracing
 ```
 
-I don't just ship models — I trace every project back to a business problem and forward to a measurable outcome.
+I don't build demos that look good once and fail in the wild. I build deterministic agent state machines with explicit failure boundaries, automated fallback routes, and measurable production unit economics.
 
 ---
 
-## 🛠️ Core Product & Engineering Stack
+## 🛠️ Core Technical Stack
 
-**Product & Data**
-`Notion` `Jira` `Figma` `PowerBI` `SQL` <!-- ⚠️ update with the tools you actually use for PRDs/roadmaps -->
-
-**Business**
-`SQL` `Power BI` <!-- ⚠️ update if different -->
-
-**AI & Orchestration**
-`Google Gemini` `LangGraph` `LangChain` `CrewAI` `LiteLLM` `Livekit (WebRTC)` 
-
-**Backend & API**
-`FastAPI` `Docker` `Pydantic` `Uvicorn` `SQLite` `APScheduler` `Python`   
-
-**Automation**
-`n8n` `Make` 
-
-**Data & Retrieval**
-`ChromaDB` `Qdrant`
-
-**Evaluation & Observability**
-`LangSmith`
-
-**Deployment**
-`AWS` `Railway` `Vercel` `Render` `Streamlit`
-
-**Models & LLMOps**
-`Groq (llama 3.3 + Whisper)` `Gemini` `MeshAPI` `OpenAI`   
+```
+Agent Architecture    │ Python 3.11+, LangGraph, LangChain, Multi-Agent Systems, Tool Calling, Pydantic Schemas
+Voice & Multimodal    │ LiveKit WebRTC, Groq LPUs (Whisper Large V3), Deepgram Aura-2, Silero VAD
+Retrieval & Vectors   │ Qdrant Cloud (HNSW), ChromaDB, FlashRank (TinyBERT Cross-Encoder), Document AI
+Security & Guardrails │ NeMo Guardrails (Colang 1.0/2.0), RBAC Route Interceptors, Portkey AI Gateway
+Eval & Observability  │ RAGAS (LLM-as-a-Judge), Pydantic Logfire Tracing, LangSmith Telemetry
+Cloud & Backend Ops   │ FastAPI, Google Cloud Run, Vertex AI, Docker, SQLModel / SQLite (WAL mode), APScheduler
+```
 
 ---
 
-## 📌 Featured Product Case Study
+## 📌 Featured Flagship Systems
 
-### Hotel Operations AI Copilot
+### 🏨 [Hotel GM Intelligence Copilot 3.0](https://github.com/SESHANKCH7171/HOTEL_GM_SYSTEM_3.0)
+*Autonomous Multi-Agent Hotel Operations Analytics & Real-Time WebRTC Voice Agent*
 
-**Business Problem**
-General Managers spend hours manually pulling data from fragmented systems (Revenue, Operations, Reputation, Payroll). Traditional LLM dashboards hallucinate financial KPIs, rendering them useless for executive decision-making.
+[![Live Voice Demo](https://img.shields.io/badge/Watch_Live_Voice_Demo-YouTube-red?style=flat-square&logo=youtube)](https://youtu.be/lGpPy6ma4SQ)
+[![LangGraph](https://img.shields.io/badge/Orchestrator-LangGraph-orange.svg?style=flat-square)](https://github.com/langchain-ai/langgraph)
+[![LiveKit WebRTC](https://img.shields.io/badge/Transport-LiveKit_WebRTC-purple.svg?style=flat-square)](https://livekit.io/)
+[![Groq LPU](https://img.shields.io/badge/Inference-Groq_LPU-green.svg?style=flat-square)](https://groq.com/)
 
-**Solution**
-Architected a deterministic multi-agent state machine separating KPI computation from LLM reasoning. Integrated a real-time WebRTC Voice Agent allowing executives to query complex relational databases hands-free.
-
-**Business Value**
-| Metric | Result |
-|---|---|
-| KPI Hallucination rate | 0% (Deterministic Python math tools) |
-| Voice Query latency | < 1s (Routed via Groq LPUs & LiveKit) |
-| Time saved | ~12 hrs/week on data aggregation |
-
-
-
-**Status:** ✅ Deployed
-**Stack:** LangGraph · Gemini 2.5 Flash · Docker · Voice Agent · LiveKit · Groq (Llama 3.3 & Whisper Large v3) · Streamlit · ChromaDB · SQLite
-
-### SmartReco.ai — Proactive EdTech Recommendation Engine
-
-**Business Problem**
-Tracking high-frequency user telemetry to generate proactive AI course recommendations typically DDOSes the backend, causes massive UI lag, and spirals LLM API costs out of control.
-
-**Solution**
-Engineered a non-blocking frontend event batcher and a FastAPI dual-write synchronization engine. Deployed asynchronous background workers (APScheduler) to process the LangGraph recommendation pipeline silently, plus API guardrails (RBAC) to block administrative token waste.
-
-**Business Value**
-| Metric | Result |
-|---|---|
-| Main browser thread blocking | 0ms (Async background processing) |
-| Admin token wastage | $0 (Intercepted at API gateway) |
-| Database Synchronization | Instant dual-write (SQLite + ChromaDB) |
-
-
-
-**Status:** ✅ Deployed
-**Stack:** FastAPI · LangGraph · ChromaDB · SQLite · Vanilla JS Event Batching
-
-[→ View Repo](#)
+* **The Problem:** Hotel General Managers spend hours manually pulling operational metrics from fragmented PMS, RMS, and payroll databases. Standard LLMs hallucinate financial KPIs (RevPAR, ADR, labor variance), making them unusable for executive decisions.
+* **The Solution:** Architected a deterministic multi-agent state machine in **LangGraph** separating KPI computation from LLM interpretation. Bridged browser audio to **LiveKit WebRTC** Cloud connected to **Groq LPUs** (`whisper-large-v3` + `gpt-oss-20b`) and **Deepgram Aura-2** streaming speech synthesis.
+* **Conversational UX:** Integrated **Silero VAD** with turn-commit heuristics to eliminate crosstalk and handle real-time interruptions seamlessly.
+* **Hybrid Data Sync:** Simultaneously streams structured operational tables to an executive **Streamlit** dashboard while delivering concise audio briefs through low-latency WebRTC data tracks.
+* 📊 **Verified Metrics:** **891ms** LLM Time-to-First-Token (TTFT) | **3.0s** end-to-end voice turnaround | **0%** math hallucination.
 
 ---
 
-## 🧪 Product Case Studies — In Progress
+### 🛡️ [Enterprise Agentic RAG & AI Security Platform for STRIPE](https://github.com/SESHANKCH7171/enterprise-rag-with-gcp)
+*Production RAG Architecture with Upstream Guardrails, Intelligent Gateway, and RAGAS Evals*
 
-Building out a portfolio of case studies, each following the same **Problem → Solution → Business Value** framework used above. Updating this table as each ships — no case study goes here until it's real.
+[![NeMo Guardrails](https://img.shields.io/badge/Security-NeMo_Guardrails_Colang-brightgreen?style=flat-square)](https://github.com/NVIDIA/NeMo-Guardrails)
+[![Qdrant](https://img.shields.io/badge/Vector_DB-Qdrant_HNSW-red?style=flat-square)](https://qdrant.tech/)
+[![RAGAS](https://img.shields.io/badge/Evals-RAGAS_Framework-blue?style=flat-square)](https://github.com/explodinggradients/ragas)
+[![Docker](https://img.shields.io/badge/Deployment-Cloud_Run_Docker-2496ED?style=flat-square&logo=docker)](https://cloud.google.com/run)
 
-| Case Study | Problem It Solves | Status |
-|---|---|---|
-| Customer Support RAG for Stripe | CrewAI, Gemini API, web search/scrape tools | ✅ Shipped |
-| Health Assistant Multi-Agent RAG | CrewAI, Gemini API, ChromaDB, PubMed_QA | ✅ Shipped |
-| VoiceScribe | Streamlit, Groq (Whisper Large V3), Python | ✅ Shipped |
-| AI Resume Analyzer | Deployed an application for HRs to analyze 1000 resumes & shortlist the right candidate for the role | ✅ Deployed |
-| AI Business Analyst Copilot | BRD → PRD → User Stories → Acceptance Criteria → Roadmap → Test Cases, automated | 🔜 In Progress |
-| Tender Intelligence Platform | `[I'll describe the problem once scoped]` | 📋 Planned |
-| AI CRM Copilot | `[I'll describe the problem once scoped]` | 📋 Planned |
-| Product Analytics Dashboard | `[I'll describe the problem once scoped]` | 📋 Planned |
-
----
-
-## 🚢 Other Shipped Projects
-
-| Project | Problem Solved | Stack | Status |
-|---|---|---|---|
-| Universal LLM Terminal Bridge | Bypassed Anthropic API rate limits and billing lock-in by building a 1,500-line async middleware proxy. Translates Claude Code schemas to Gemini APIs in real-time.| FastAPI, LiteLLM, Gemini API, Uvicorn | ✅ Shipped |
-| HR Analytics Platform | Bypassed keyword-matching limitations of traditional ATS software by engineering a contextual document parsing engine for 1,000+ resumes.| Python, Streamlit, Gemini 2.5 Flash, JSON Extraction | ✅ Shipped |
-| Customer Churn Dashboard | Segmented 7,000+ telecom records to identify demographic drivers of a 30.5% monthly revenue bleed, proposing auto-pay incentives.| Python, Pandas, Matplotlib | ✅ Shipped |
-| Multi-Agent Content Engine | Automated domain-specific content pipelines utilizing coordinated AI agents.| CrewAI, Gemini API | ✅ Shipped |
-
-
+* **The Problem:** Deploying LLMs over 4,000+ technical documentation pages introduces major security vulnerabilities (prompt injection, secret leaks, API fraud bypass) and high token latency from bloated context windows.
+* **Two-Stage Retrieval Funnel:** Parsed 4,000+ technical docs from `docs.stripe.com` via **Document AI**. Combined dense **Qdrant HNSW** vector search with a local **FlashRank (TinyBERT)** cross-encoder, boosting Context Precision to **0.93** while reducing prompt tokens by **65%**.
+* **Upstream Security Gate:** Enforced **NeMo Guardrails** with custom **Colang** policies upstream of LLM inference, neutralizing prompt injections, credential leaks, and fraud jailbreak attempts across attack benchmarks with zero false positives.
+* **Resilience & Evaluation:** Orchestrated intent-based planning in **LangGraph** with a **Portkey AI Gateway** and automated Groq fallbacks (**1.00 Tool Correctness**). Validated against a 15-scenario golden evaluation set with **RAGAS** and **Pydantic Logfire** distributed tracing (**0.80 Answer Relevancy**, **0.75 Answer Correctness**).
+* **Containerization:** Engineered a dual-manifest Docker build for **Google Cloud Run**, slashing image size by **85% (3.5 GB → 520 MB)**.
 
 ---
 
-## 🧯 What I've Broken (And Learned From)
+### 🎯 [SmartReco.ai — Proactive Recommendation Engine](https://github.com/SESHANKCH7171/smartreco-ai-engine)
+*Event-Driven Asynchronous Multi-Agent Recommendation Platform*
 
-> "Agents reason, services retrieve, metrics compute." I document what failed along the way — that's where production-grade product thinking actually gets tested.
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![LangGraph](https://img.shields.io/badge/State_Machine-LangGraph-orange?style=flat-square)](https://github.com/langchain-ai/langgraph)
+[![ChromaDB](https://img.shields.io/badge/Vector_Store-ChromaDB-lightblue?style=flat-square)](https://www.trychroma.com/)
 
-| Project | What Went Wrong | Root Cause | Fix Applied |
-|---|---|---|---|
-| Hotel GM Voice Agent | LiveKit WebRTC widget crashed, displaying a blank white box in the dashboard. | Streamlit's native components.html() runs in an iframe that strictly strips allow="microphone" security tags. | Generated dynamic access tokens in the backend and pivoted to a Secure Executive WebRTC Portal in a new tab, bypassing the iframe sandbox entirely. |
-| Terminal AI Testing | Hit hard API rate limits and billing lock-in during local dev testing, stopping work. |	Hardcoded vendor lock-in within specialized developer terminal clients.	| Upskilled in FastAPI to build a dynamic API proxy, translating SSE token-by-token streaming to map Anthropic requests to free Gemini models. |
-| Stock Analysis (Hallucinated) | LLM fabricated price/RSI/trend data with full confidence | No source grounding, no validation layer | Fixed in Hotel GM 2.0 pattern: deterministic metrics via custom Python service tools; LLM strictly for cross-domain reasoning |
-
----
-
-## 📄 Product Documents
-
-As each case study ships, I'll publish the full product trail alongside the code:
-- PRDs
-- User Stories
-- Roadmaps
-- Wireframes
-- Personas
-- Market & Competitive Research
-- Feature Prioritization
+* **The Problem:** Tracking user clickstreams and running LLMs synchronously on every interaction causes severe frontend lag, DDOSes backend servers, and burns thousands of unnecessary API tokens on administrative browsing.
+* **Non-Blocking Telemetry:** Engineered a custom client-side event bus (`tracker.js`) with 5-second queue flushing and an asynchronous background evaluation engine using **APScheduler**, eliminating live-session UI latency while cutting API churn by **80%**.
+* **Asynchronous LangGraph Graph:** Built a 3-node state machine (`analyze_behavior` → `retrieve_products` → `generate_copy`) deducing technical career trajectory from clickstream telemetry to query **ChromaDB**.
+* **Dual-Store Synchronization:** Built an atomic dual-write transactional service layer across **SQLite** and **ChromaDB**, ensuring 100% relational-vector consistency across catalog mutations at sub-100ms sync speeds.
+* **Production Guardrails:** Role-Based Access Control (RBAC) interceptors eliminate redundant token expenditure on administrative requests, combined with an automated Cold-Start discovery fallback.
 
 ---
 
-## 🎓 Background
+## 🧪 Shipped Systems & Engineering Portfolio
 
-- **M.Tech, Aerospace Engineering** — IIT Madras
-- **B2B Systems & Market Intelligence** 
-- Currently focused on **AI Product Engineering**, business analysis, and production AI systems
-- Open to remote **AI Product developer/analyst** roles globally
-
-📍 Nashik, Maharashtra, India
-🔗 [LinkedIn](https://www.linkedin.com/in/seshankch/)
-🐦 [@ChSeshank](https://twitter.com/ChSeshank)
+| System | Architecture & Focus | Tech Stack | Status |
+| :--- | :--- | :--- | :---: |
+| **[Hotel GM Intelligence Copilot 3.0](https://github.com/SESHANKCH7171/HOTEL_GM_SYSTEM_3.0)** | Real-time WebRTC Voice Copilot + LangGraph operational anomaly engine for Hotel GMs | `LiveKit` `Groq LPUs` `Whisper V3` `LangGraph` `Deepgram` `Streamlit` | ✅ Live Demo |
+| **[Enterprise Agentic RAG Platform](https://github.com/SESHANKCH7171/enterprise-rag-with-gcp)** | Enterprise RAG over 4,000+ docs with NeMo Guardrails, Portkey Gateway, and RAGAS evals | `Qdrant HNSW` `NeMo Colang` `FlashRank` `Portkey` `Logfire` `Cloud Run` | ✅ Deployed |
+| **[SmartReco.ai Engine](https://github.com/SESHANKCH7171/smartreco-ai-engine)** | Event-driven proactive recommendation agent with async background workers & dual-store sync | `FastAPI` `LangGraph` `APScheduler` `ChromaDB` `SQLite` `Vanilla JS` | ✅ Shipped |
+| **[Universal LLM Terminal Bridge](https://github.com/SESHANKCH7171/universal-llm-terminal-bridge)** | High-throughput transparent proxy server translating Anthropic API protocols to LiteLLM for Claude Code CLI | `Python` `LiteLLM` `Vertex AI` `Gemini 2.5` `SSE Streaming` `Docker` | ✅ Shipped |
+| **[HR Analytics Intelligence](https://github.com/SESHANKCH7171/Business-Analytics-Portfolio)** | Multimodal resume screening engine automating JD gap analysis and candidate scoring across 500+ PDFs | `Gemini 2.5 Flash` `Multimodal Vision` `FastAPI` `Streamlit` `Pydantic` | ✅ Shipped |
+| **[VoiceScribe](https://github.com/SESHANKCH7171/Voicescribe)** | Local, zero-latency audio dictation alternative to Wispr Flow streaming to Groq Whisper Large V3 | `Python` `Streamlit` `Groq Whisper V3` `Web Audio` `Speech-to-Text` | ✅ Open Source |
 
 ---
 
-*Building in public, one product case study at a time.*
+## 🚨 What I've Broken & What I Learned (POST-MORTEMS)
+
+> *"The only way to build reliable agentic software is to break things under real constraints. Here are real post-mortems from my projects:"*
+
+| Project | What Broke (The Bug) | Root Cause | The Post-Mortem (How I Fixed It) |
+| :--- | :--- | :--- | :--- |
+| **Universal LLM Terminal Bridge** | Anthropic CLI rejected streaming responses midway through large codebases with JSON decode errors. | SSE (Server-Sent Events) chunking protocol mismatch between Anthropic's expected event format and LiteLLM's raw stream chunks. | Rewrote the SSE event translator to buffer chunks and parse raw bytes before re-emitting standardized Anthropic event frames. Added test suites handling 500k+ token payloads. |
+| **SmartReco.ai** | `APScheduler` background worker crashed with `sqlite3.OperationalError: database is locked` during concurrent browser browsing. | SQLite default rollback journal blocks concurrent writes between FastAPI request threads and async background workers. | Enabled SQLite Write-Ahead Logging (`PRAGMA journal_mode=WAL`), configured a 15-second busy timeout, and wrapped writes in an atomic transactional service layer with exponential backoff. |
+| **Hotel GM Voice Copilot** | Voice interaction latency spiked to >6 seconds during multi-turn conversations, causing awkward pauses and audio lag. | The system waited for the entire LLM response to complete generation before sending text to the Text-to-Speech (TTS) engine. | Switched to streaming TTS via Deepgram Aura-2 over WebRTC data tracks. As soon as the LLM emits the first 3 tokens, audio synthesis begins immediately, cutting perceived turnaround to <1s. |
+| **Enterprise Stripe RAG** | Ingestion of 4,000+ technical pages caused retrieval context dilution ("lost-in-the-middle") and high P95 prompt token costs. | Naive dense vector search retrieved top-20 chunks containing redundant boilerplate and navigation headers from parsed HTML. | Engineered a Two-Stage Retrieval Funnel: Qdrant HNSW retrieves top-25 candidate chunks, followed by a local **FlashRank (TinyBERT)** cross-encoder reranking to top-5, slashing prompt tokens by **65%** and boosting Context Precision to **0.93**. |
+
+---
+
+## 📈 Quantitative System Telemetry
+
+| Engineering Metric | Measured Value | Architectural Layer |
+| :--- | :---: | :--- |
+| **Voice Time-to-First-Token (TTFT)** | **891 ms** | Groq LPU + Silero VAD + LiveKit WebRTC |
+| **End-to-End Voice Turnaround** | **3.0 s** | Full Turn: Acoustic Ingestion ➔ LangGraph ➔ Deepgram TTS |
+| **RAG Context Precision** | **0.93** | Two-Stage Funnel: Qdrant HNSW + FlashRank Cross-Encoder |
+| **Prompt Token Payload Reduction** | **65%** | TinyBERT Cross-Encoder Reranking & Context Pruning |
+| **Attack Interception Recall** | **100% (Test Set)** | Upstream NeMo Guardrails with Colang policies |
+| **Agent Tool Correctness** | **1.00** | Autonomous LangGraph State Machine with TypedDict schema |
+| **Docker Container Footprint** | **85% reduction** | Dual-manifest build for Google Cloud Run (3.5 GB → 520 MB) |
+| **Frontend Telemetry Ingestion Overhead** | **0 ms** | APScheduler background worker + client-side queue flush |
+
+---
+
+## 📁 System Design & Architecture Artifacts
+
+- 📐 **State Machine Graphs:** Explicit TypedDict cyclic topologies for LangGraph nodes (`analyze`, `retrieve`, `route`, `execute`, `verify`).
+- 🛡️ **Colang Security Policies:** Multi-rail guardrails for jailbreak neutralization, sensitive credential masking, and topic adherence.
+- 📊 **Golden Evaluation Datasets:** 15-scenario RAG and 6-scenario red-team attack benchmarks evaluated with RAGAS metrics.
+- ⚡ **Telemetry Logs:** Pydantic Logfire distributed spans and LangSmith execution run trees tracking latency, token usage, and P95 overhead.
+
+---
+
+## 🎓 Background & Education
+
+- 🏛️ **IIT Madras** — Dual Degree (B.Tech + M.Tech), Aerospace Engineering (2018 – 2023)
+- 🎯 **Minor Degree** — Personality and Professional Development, IIT Madras
+- 🔬 **Engineering Foundation:** Strong analytical background in computational mathematics, fluid dynamics, state-space systems modeling, and high-performance computing, now applied to autonomous agent architectures and latency optimization.
+
+---
+
+## 📬 Connect with Me
+
+- 💼 **LinkedIn:** [linkedin.com/in/seshankch](https://linkedin.com/in/seshankch)
+- 🐙 **GitHub:** [github.com/seshankch7171](https://github.com/seshankch7171)
+- ✉️ **Email:** [seshankch7171@gmail.com](mailto:seshankch7171@gmail.com)

@@ -150,4 +150,4 @@ Cloud & Backend Ops   │ FastAPI, Google Cloud Run, Vertex AI, Docker, SQLModel
 
 - 💼 **LinkedIn:** [linkedin.com/in/seshankch](https://linkedin.com/in/seshankch)
 - 🐙 **GitHub:** [github.com/seshankch7171](https://github.com/seshankch7171)
-- ✉️ **Email:** [seshankch7171@gmail.com](mailto:seshankch7171@gmail.com)
+- ✉️ **Email:** [seshankch7171@gmail.com](mailto:seshankch7171@gmail.com), [seshank@seshankailabs.com](mailto:seshank@seshankailabs.com)
